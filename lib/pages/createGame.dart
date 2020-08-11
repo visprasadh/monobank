@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:monobank/widgets/blackButton.dart';
+import 'package:monobank/widgets/header.dart';
 import 'dart:math';
 
 class CreateGame extends StatelessWidget {
@@ -18,17 +19,7 @@ class CreateGame extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Container(
-                padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
-                width: double.infinity,
-                child: Text(
-                  'Monobank',
-                  style: TextStyle(
-                    fontFamily: 'Coves',
-                    fontSize: 40,
-                  ),
-                ),
-              ),
+              Header(),
               Padding(
                 padding: const EdgeInsets.all(30),
                 child: QrImage(
